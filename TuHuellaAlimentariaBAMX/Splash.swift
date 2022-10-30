@@ -30,3 +30,11 @@ struct Splash: View {
         .background(bg)
     }
 }
+
+struct Splash_Previews: PreviewProvider {
+    static var previews: some View {
+        Splash(
+            bg: Color(#colorLiteral(red: 153/256, green: 0/256, blue: 19/256, alpha: 1))
+        )
+    }
+}
