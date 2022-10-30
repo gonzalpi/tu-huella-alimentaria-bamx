@@ -28,6 +28,7 @@ struct Login: View {
                 Text("¡Te damos la\nbienvenida!")
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .semibold, design: .default))
+                    .multilineTextAlignment(.center)
                 Image("logo")
                     .resizable()
                     .frame(width: 106, height: 133)
@@ -110,8 +111,8 @@ struct LoginButton: View {
 struct Login_Previews: PreviewProvider {
     static var previews: some View {
         Login(
-            bg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1)),
-            fg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1))
+            bg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1)),
+            fg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
         )
     }
 }

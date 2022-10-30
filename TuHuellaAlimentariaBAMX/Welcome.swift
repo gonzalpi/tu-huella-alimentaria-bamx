@@ -41,7 +41,7 @@ struct Welcome: View {
                     .padding(.top)
                     .padding(.bottom)
                 }
-                .background(redBgColor)
+                .background(fg)
                 .frame(width: .infinity, height: 86)
                 .cornerRadius(43)
                 .padding(.leading, -50)
@@ -53,7 +53,7 @@ struct Welcome: View {
                 Button(action: {}, label: {
                     ZStack {
                         Rectangle()
-                            .fill(redBgColor)
+                            .fill(fg)
                             .frame(width: 191, height: 62)
                             .cornerRadius(43)
                         Text("Empecemos")
@@ -69,24 +69,7 @@ struct Welcome: View {
             }
             Spacer()
         }
-        .background(creamBgColor)
-    }
-}
-
-struct FooterButton: View {
-    var body: some View {
-        ZStack {
-            Image("fruits")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: UIScreen.main.bounds.size.width, height: 180)
-                .cornerRadius(43)
-                .opacity(0.3)
-            Text("¡Terminemos el\nhambre!\n\n")
-                .font(.system(size: 32, weight: .regular))
-                .multilineTextAlignment(.center)
-                .foregroundColor(.white)
-        }
+        .background(bg)
     }
 }
 
@@ -94,8 +77,8 @@ struct Welcome_Previews: PreviewProvider {
     static var previews: some View {
         Welcome(
             name: "Alejandro",
-            bg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1)),
-            fg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1))
+            bg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1)),
+            fg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
         )
     }
 }

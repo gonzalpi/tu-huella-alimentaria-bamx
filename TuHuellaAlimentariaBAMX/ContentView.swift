@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-let redBgColor = Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
-let creamBgColor = Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1))
-let splashBgColor = Color(#colorLiteral(red: 153/256, green: 0/256, blue: 19/256, alpha: 1))
+let redColor = Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
+let creamColor = Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1))
+let darkRedColor = Color(#colorLiteral(red: 153/256, green: 0/256, blue: 19/256, alpha: 1))
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            // Splash(bg: splashBgColor)
-            // Login(bg: creamBgColor, fg: redBgColor)
-            // Welcome(bg: creamBgColor, fg: redBgColor)
-            Welcome(name: "Alejandro", bg: creamBgColor, fg: redBgColor)
+            // Splash(bg: darkRedColor)
+            // Login(bg: creamColor, fg: redColor)
+            // Welcome(bg: creamColor, fg: redColor)
+            Welcome(name: "Alejandro", bg: creamColor, fg: redColor)
         }
     }
 }

@@ -17,6 +17,8 @@
 		EA5CA9C62904766100D2DD4D /* TuHuellaAlimentariaBAMXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9C52904766100D2DD4D /* TuHuellaAlimentariaBAMXTests.swift */; };
 		EA5CA9D02904766100D2DD4D /* TuHuellaAlimentariaBAMXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9CF2904766100D2DD4D /* TuHuellaAlimentariaBAMXUITests.swift */; };
 		EA5CA9D22904766100D2DD4D /* TuHuellaAlimentariaBAMXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9D12904766100D2DD4D /* TuHuellaAlimentariaBAMXUITestsLaunchTests.swift */; };
+		EA785A58290F408700FD7639 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA785A57290F408700FD7639 /* Instructions.swift */; };
+		EA785A5A290F45D100FD7639 /* FooterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA785A59290F45D100FD7639 /* FooterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		EA5CA9CB2904766100D2DD4D /* TuHuellaAlimentariaBAMXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuHuellaAlimentariaBAMXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5CA9CF2904766100D2DD4D /* TuHuellaAlimentariaBAMXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuHuellaAlimentariaBAMXUITests.swift; sourceTree = "<group>"; };
 		EA5CA9D12904766100D2DD4D /* TuHuellaAlimentariaBAMXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuHuellaAlimentariaBAMXUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA785A57290F408700FD7639 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
+		EA785A59290F45D100FD7639 /* FooterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 			children = (
 				EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */,
 				EA5CA9B62904766000D2DD4D /* ContentView.swift */,
+				EA785A57290F408700FD7639 /* Instructions.swift */,
 				EA043F47290A1EEA0012EFC4 /* Welcome.swift */,
+				EA785A59290F45D100FD7639 /* FooterButton.swift */,
 				EA043F43290A1C8B0012EFC4 /* Splash.swift */,
 				EA043F45290A1E1B0012EFC4 /* Login.swift */,
 				EA5CA9B82904766100D2DD4D /* Assets.xcassets */,
@@ -266,10 +272,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA785A5A290F45D100FD7639 /* FooterButton.swift in Sources */,
 				EA5CA9B72904766000D2DD4D /* ContentView.swift in Sources */,
 				EA043F48290A1EEA0012EFC4 /* Welcome.swift in Sources */,
 				EA043F44290A1C8B0012EFC4 /* Splash.swift in Sources */,
 				EA5CA9B52904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift in Sources */,
+				EA785A58290F408700FD7639 /* Instructions.swift in Sources */,
 				EA043F46290A1E1B0012EFC4 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
