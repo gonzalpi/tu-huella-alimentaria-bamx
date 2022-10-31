@@ -10,7 +10,7 @@ import SwiftUI
 struct Login: View {
     let bg: Color,
         fg: Color
-    init (bg: Color, fg: Color) {
+    init(bg: Color, fg: Color) {
         self.bg = bg
         self.fg = fg
     }
