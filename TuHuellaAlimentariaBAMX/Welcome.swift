@@ -46,10 +46,11 @@ struct Welcome: View {
                 .cornerRadius(43)
                 .padding(.leading, -50)
                 Spacer()
-                Text("Conozcamos tu\nhuella alimentaria")
+                Text("Conozcamos tu huella alimentaria")
                     .font(.system(size: 40, weight: .regular))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
+                    .frame(width: UIScreen.main.bounds.width - 50)
                 Button(action: {}, label: {
                     ZStack {
                         Rectangle()

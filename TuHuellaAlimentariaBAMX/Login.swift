@@ -25,10 +25,11 @@ struct Login: View {
             }
             VStack {
                 Spacer()
-                Text("¡Te damos la\nbienvenida!")
+                Text("¡Te damos la bienvenida!")
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .semibold, design: .default))
                     .multilineTextAlignment(.center)
+                    .frame(width: UIScreen.main.bounds.width - 50)
                 Image("logo")
                     .resizable()
                     .frame(width: 106, height: 133)

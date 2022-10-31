@@ -30,10 +30,11 @@ struct Instructions: View {
                 VStack {                    Image("logo")
                         .resizable()
                         .frame(width: 106, height: 133)
-                    Text("Contesta las\nsiguientes\npreguntas\nhonestamente")
+                    Text("Contesta las siguientes preguntas honestamente")
                         .foregroundColor(.white)
                         .font(.system(size: 35, weight: .semibold, design: .default))
                         .multilineTextAlignment(.center)
+                        .frame(width: UIScreen.main.bounds.width - 50)
                     Spacer(minLength: 150)
                     Button(action: {}, label: {
                         ZStack {
