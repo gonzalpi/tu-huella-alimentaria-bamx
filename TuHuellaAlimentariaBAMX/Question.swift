@@ -32,7 +32,7 @@ struct Question: View {
             }
             VStack {
                 Text(q)
-                    .frame(width: UIScreen.main.bounds.width)
+                    .frame(width: UIScreen.main.bounds.width - 50)
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .semibold, design: .default))
                     .multilineTextAlignment(.center)
