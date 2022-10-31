@@ -11,7 +11,7 @@ struct Welcome: View {
     let hello: String
     let bg: Color,
         fg: Color
-    init (bg: Color, fg: Color) {
+    init(bg: Color, fg: Color) {
         self.hello = "¡Hola!"
         self.bg = bg
         self.fg = fg
