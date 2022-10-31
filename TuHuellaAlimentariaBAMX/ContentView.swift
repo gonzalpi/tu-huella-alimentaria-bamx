@@ -19,7 +19,8 @@ struct ContentView: View {
             // Welcome(bg: creamColor, fg: redColor)
             // Welcome(name: "Alejandro", bg: creamColor, fg: redColor)
             // Question(q: "¿Cuántas veces vas al súper al mes?", bg: creamColor, fg: redColor)
-            Footprint(footprint: "8000 kg", bg: redColor, fg: creamColor)
+            // Footprint(footprint: "8000 kg", bg: redColor, fg: creamColor)
+            Donate(bg: creamColor, fg: redColor)
         }
     }
 }
