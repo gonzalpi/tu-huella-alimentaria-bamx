@@ -18,7 +18,8 @@ struct ContentView: View {
             // Login(bg: creamColor, fg: redColor)
             // Welcome(bg: creamColor, fg: redColor)
             // Welcome(name: "Alejandro", bg: creamColor, fg: redColor)
-            Question(q: "¿Cuántas veces vas al súper al mes?", bg: creamColor, fg: redColor)
+            // Question(q: "¿Cuántas veces vas al súper al mes?", bg: creamColor, fg: redColor)
+            Footprint(footprint: "8000 kg", bg: redColor, fg: creamColor)
         }
     }
 }
