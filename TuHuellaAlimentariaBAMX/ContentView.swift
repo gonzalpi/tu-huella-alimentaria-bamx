@@ -17,7 +17,8 @@ struct ContentView: View {
             // Splash(bg: darkRedColor)
             // Login(bg: creamColor, fg: redColor)
             // Welcome(bg: creamColor, fg: redColor)
-            Welcome(name: "Alejandro", bg: creamColor, fg: redColor)
+            // Welcome(name: "Alejandro", bg: creamColor, fg: redColor)
+            Question(q: "¿Cuántas veces vas al súper al mes?", bg: creamColor, fg: redColor)
         }
     }
 }
