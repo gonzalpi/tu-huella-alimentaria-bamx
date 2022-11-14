@@ -19,6 +19,9 @@
 		EA5CA9D22904766100D2DD4D /* TuHuellaAlimentariaBAMXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9D12904766100D2DD4D /* TuHuellaAlimentariaBAMXUITestsLaunchTests.swift */; };
 		EA785A58290F408700FD7639 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA785A57290F408700FD7639 /* Instructions.swift */; };
 		EA785A5A290F45D100FD7639 /* FooterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA785A59290F45D100FD7639 /* FooterButton.swift */; };
+		F1883F1A291BE1670000959D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F17291BE1670000959D /* Question.swift */; };
+		F1883F1B291BE1670000959D /* Footprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F18291BE1670000959D /* Footprint.swift */; };
+		F1883F1C291BE1670000959D /* Donate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F19291BE1670000959D /* Donate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		EA5CA9D12904766100D2DD4D /* TuHuellaAlimentariaBAMXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuHuellaAlimentariaBAMXUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA785A57290F408700FD7639 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		EA785A59290F45D100FD7639 /* FooterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterButton.swift; sourceTree = "<group>"; };
+		F1883F17291BE1670000959D /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F1883F18291BE1670000959D /* Footprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Footprint.swift; sourceTree = "<group>"; };
+		F1883F19291BE1670000959D /* Donate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 			children = (
 				EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */,
 				EA5CA9B62904766000D2DD4D /* ContentView.swift */,
+				F1883F19291BE1670000959D /* Donate.swift */,
+				F1883F18291BE1670000959D /* Footprint.swift */,
+				F1883F17291BE1670000959D /* Question.swift */,
 				EA785A57290F408700FD7639 /* Instructions.swift */,
 				EA043F47290A1EEA0012EFC4 /* Welcome.swift */,
 				EA785A59290F45D100FD7639 /* FooterButton.swift */,
@@ -273,11 +282,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA785A5A290F45D100FD7639 /* FooterButton.swift in Sources */,
+				F1883F1A291BE1670000959D /* Question.swift in Sources */,
 				EA5CA9B72904766000D2DD4D /* ContentView.swift in Sources */,
 				EA043F48290A1EEA0012EFC4 /* Welcome.swift in Sources */,
 				EA043F44290A1C8B0012EFC4 /* Splash.swift in Sources */,
+				F1883F1B291BE1670000959D /* Footprint.swift in Sources */,
 				EA5CA9B52904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift in Sources */,
 				EA785A58290F408700FD7639 /* Instructions.swift in Sources */,
+				F1883F1C291BE1670000959D /* Donate.swift in Sources */,
 				EA043F46290A1E1B0012EFC4 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
