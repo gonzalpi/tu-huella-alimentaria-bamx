@@ -13,10 +13,14 @@ let answerGreenColor = Color(#colorLiteral(red: 138/256, green: 192/256, blue: 1
 let answerRedColor = Color(#colorLiteral(red: 207/256, green: 104/256, blue: 104/256, alpha: 1))
 
 struct Question: View {
+    
+    @StateObject var viewRouter: ViewRouter
+    
     let q: String
     let bg: Color,
         fg: Color
-    init(q: String, bg: Color, fg: Color) {
+    init(viewRouter: ViewRouter, q: String, bg: Color, fg: Color) {
+        _viewRouter =  StateObject(wrappedValue: viewRouter)
         self.q = q
         self.bg = bg
         self.fg = fg
@@ -86,6 +90,7 @@ struct AnswerButton: View {
 struct Question_Previews: PreviewProvider {
     static var previews: some View {
         Question(
+            viewRouter: ViewRouter(),
             q: "¿Cuántas veces vas al súper al mes?",
             bg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1)),
             fg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))

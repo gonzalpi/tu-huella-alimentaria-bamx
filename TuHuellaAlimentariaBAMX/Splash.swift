@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct Splash: View {
+    
+    @StateObject var viewRouter: ViewRouter
+    
     let bg: Color
-    init(bg: Color) {
+    init(viewRouter: ViewRouter, bg: Color) {
+        _viewRouter =  StateObject(wrappedValue: viewRouter)
         self.bg = bg
     }
     var body: some View {
@@ -34,6 +38,7 @@ struct Splash: View {
 struct Splash_Previews: PreviewProvider {
     static var previews: some View {
         Splash(
+            viewRouter: ViewRouter(),
             bg: Color(#colorLiteral(red: 153/256, green: 0/256, blue: 19/256, alpha: 1))
         )
     }

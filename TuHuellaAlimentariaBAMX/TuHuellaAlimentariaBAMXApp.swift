@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TuHuellaAlimentariaBAMXApp: App {
+    
+    @StateObject var viewRouter =  ViewRouter()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MotherView(viewRouter: viewRouter)
         }
     }
 }

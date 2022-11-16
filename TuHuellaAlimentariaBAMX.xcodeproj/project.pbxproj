@@ -22,6 +22,9 @@
 		F1883F1A291BE1670000959D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F17291BE1670000959D /* Question.swift */; };
 		F1883F1B291BE1670000959D /* Footprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F18291BE1670000959D /* Footprint.swift */; };
 		F1883F1C291BE1670000959D /* Donate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F19291BE1670000959D /* Donate.swift */; };
+		F1DAB27029251C63002F093B /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAB26F29251C63002F093B /* MotherView.swift */; };
+		F1DAB27229251CA9002F093B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAB27129251CA9002F093B /* Helper.swift */; };
+		F1DAB27429251F2E002F093B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DAB27329251F2E002F093B /* ViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		F1883F17291BE1670000959D /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F1883F18291BE1670000959D /* Footprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Footprint.swift; sourceTree = "<group>"; };
 		F1883F19291BE1670000959D /* Donate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donate.swift; sourceTree = "<group>"; };
+		F1DAB26F29251C63002F093B /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		F1DAB27129251CA9002F093B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F1DAB27329251F2E002F093B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */,
+				F1DAB27129251CA9002F093B /* Helper.swift */,
 				EA5CA9B62904766000D2DD4D /* ContentView.swift */,
+				F1DAB26F29251C63002F093B /* MotherView.swift */,
+				F1DAB27329251F2E002F093B /* ViewRouter.swift */,
 				F1883F19291BE1670000959D /* Donate.swift */,
 				F1883F18291BE1670000959D /* Footprint.swift */,
 				F1883F17291BE1670000959D /* Question.swift */,
@@ -284,13 +293,16 @@
 				EA785A5A290F45D100FD7639 /* FooterButton.swift in Sources */,
 				F1883F1A291BE1670000959D /* Question.swift in Sources */,
 				EA5CA9B72904766000D2DD4D /* ContentView.swift in Sources */,
+				F1DAB27429251F2E002F093B /* ViewRouter.swift in Sources */,
 				EA043F48290A1EEA0012EFC4 /* Welcome.swift in Sources */,
 				EA043F44290A1C8B0012EFC4 /* Splash.swift in Sources */,
 				F1883F1B291BE1670000959D /* Footprint.swift in Sources */,
+				F1DAB27029251C63002F093B /* MotherView.swift in Sources */,
 				EA5CA9B52904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift in Sources */,
 				EA785A58290F408700FD7639 /* Instructions.swift in Sources */,
 				F1883F1C291BE1670000959D /* Donate.swift in Sources */,
 				EA043F46290A1E1B0012EFC4 /* Login.swift in Sources */,
+				F1DAB27229251CA9002F093B /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
