@@ -52,7 +52,7 @@ struct Welcome: View {
                 .padding(.leading, -50)
                 Spacer()
                 Text("Conozcamos tu huella alimentaria")
-                    .font(.system(size: 40, weight: .regular))
+                    .font(.system(size: 40, weight: .semibold))
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
                     .frame(width: UIScreen.main.bounds.width - 50)

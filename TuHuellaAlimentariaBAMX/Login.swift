@@ -45,7 +45,9 @@ struct Login: View {
                     Button(action: {}, label: {
                         LoginButton(txt: "Iniciar sesión con Apple", img: "apple", fgColor: .white, bgColor: .black)
                     })
-                    Button(action: {}, label: {
+                    Button(action: {
+                        viewRouter.currentPage = .welcome
+                    }, label: {
                         HStack {
                             Text("seguir")
                                 .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))

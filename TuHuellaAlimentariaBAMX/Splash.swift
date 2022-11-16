@@ -29,6 +29,11 @@ struct Splash: View {
                     .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4)))
                     .font(.system(size: 15))
             }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    viewRouter.currentPage = .login
+                }
+            }
             Spacer()
         }
         .background(bg)
@@ -39,7 +44,7 @@ struct Splash_Previews: PreviewProvider {
     static var previews: some View {
         Splash(
             viewRouter: ViewRouter(),
-            bg: Color(#colorLiteral(red: 153/256, green: 0/256, blue: 19/256, alpha: 1))
+            bg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
         )
     }
 }

@@ -14,7 +14,7 @@ struct MotherView: View {
     var body: some View {
         switch viewRouter.currentPage {
         case .splash:
-            Splash(viewRouter: viewRouter, bg: darkRedColor)
+            Splash(viewRouter: viewRouter, bg: redColor)
         case .login:
             Login(viewRouter: viewRouter, bg: creamColor, fg: redColor)
         case .welcome:
