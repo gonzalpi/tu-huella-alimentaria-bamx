@@ -48,8 +48,12 @@ struct Footprint: View {
                 }
             }
             Spacer()
-            FooterButton()
-                .padding(.bottom, -80)
+            Button(action: {
+                viewRouter.currentPage = .donate
+            }) {
+                FooterButton()
+                    .padding(.bottom, -80)
+            }
         }
         .background(bg)
     }

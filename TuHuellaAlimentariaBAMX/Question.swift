@@ -16,15 +16,27 @@ struct Question: View {
     
     @StateObject var viewRouter: ViewRouter
     
-    let q: String
+    let q: String,
+        ans1: String,
+        ans2: String,
+        ans3: String,
+        ans4: String
     let bg: Color,
         fg: Color
-    init(viewRouter: ViewRouter, q: String, bg: Color, fg: Color) {
+    
+    init(viewRouter: ViewRouter, q: String,ans1: String,
+         ans2: String, ans3: String, ans4: String, bg: Color, fg: Color) {
         _viewRouter =  StateObject(wrappedValue: viewRouter)
         self.q = q
+        self.ans1 = ans1
+        self.ans2 = ans2
+        self.ans3 = ans3
+        self.ans4 = ans4
         self.bg = bg
         self.fg = fg
+        
     }
+    
     var body: some View {
         ZStack {
             VStack {
@@ -49,12 +61,12 @@ struct Question: View {
                         .cornerRadius(30)
                     VStack {
                         HStack {
-                            AnswerButton(bg: answerBlueColor)
-                            AnswerButton(bg: answerYellowColor)
+                            AnswerButton(viewRouter: viewRouter,bg: answerBlueColor, ans:  ans1)
+                            AnswerButton(viewRouter: viewRouter,bg: answerYellowColor,ans:  ans2)
                         }
                         HStack {
-                            AnswerButton(bg: answerGreenColor)
-                            AnswerButton(bg: answerRedColor)
+                            AnswerButton(viewRouter: viewRouter,bg: answerGreenColor, ans:  ans3)
+                            AnswerButton(viewRouter: viewRouter, bg: answerRedColor, ans:  ans4)
                         }
                         .padding(.bottom, 50)
                     }
@@ -66,24 +78,37 @@ struct Question: View {
     }}
 
 struct AnswerButton: View {
+    @StateObject var viewRouter: ViewRouter
     let bg: Color
-    init(bg: Color) {
+    let ans: String
+    let currentPageOnArray : Int
+    
+    let questions: [Page] = [.question1,.question2,.question3,.question4,.question5,.question6,.question7,.question8,.question9,.question10,.footprint]
+    
+    init(viewRouter: ViewRouter, bg: Color, ans: String) {
+        _viewRouter =  StateObject(wrappedValue: viewRouter)
         self.bg = bg
+        self.ans = ans
+        self.currentPageOnArray = questions.firstIndex(where: { $0 == viewRouter.currentPage })!
     }
     var body: some View {
-        ZStack {
-            HStack {
-                Rectangle()
-                    .fill(bg)
-                    .frame(width: 170, height: 150)
-                    .cornerRadius(20)
+        Button(action: {
+            viewRouter.currentPage = questions[currentPageOnArray + 1]
+        },label: {
+            ZStack {
+                HStack {
+                    Rectangle()
+                        .fill(bg)
+                        .frame(width: 170, height: 150)
+                        .cornerRadius(20)
+                }
+                .frame(width: 180, height: 160)
+                Text(ans)
+                    .foregroundColor(.white)
+                    .font(.system(size: 20, weight: .semibold, design: .default))
+                    .multilineTextAlignment(.center)
             }
-            .frame(width: 180, height: 160)
-            Image("logo")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 133, height: 100)
-        }
+        })
     }
 }
 
@@ -92,6 +117,10 @@ struct Question_Previews: PreviewProvider {
         Question(
             viewRouter: ViewRouter(),
             q: "¿Cuántas veces vas al súper al mes?",
+            ans1: "Respuesta1",
+            ans2: "Respuesta2",
+            ans3: "Respuesta3",
+            ans4: "Respuesta4",
             bg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1)),
             fg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
         )
