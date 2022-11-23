@@ -4,3 +4,6 @@ xcuserdata/
 ## Xcode 8 and earlier
 *.xcscmblueprint
 *.xccheckout
+
+# Firebase config file
+GoogleService-Info.plist
