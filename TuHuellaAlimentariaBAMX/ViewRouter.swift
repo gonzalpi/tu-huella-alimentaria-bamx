@@ -10,4 +10,5 @@ import SwiftUI
 class ViewRouter: ObservableObject {
     
     @Published var currentPage : Page = .splash
+    @Published var points : Int = 0
 }

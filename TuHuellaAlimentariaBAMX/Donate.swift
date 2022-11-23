@@ -39,7 +39,7 @@ struct Donate: View {
                     .multilineTextAlignment(.center)
                 Spacer(minLength: 150)
                 HStack {
-                    Button(action: {}, label: {
+                    Button(action: { (amount > 500) ? (amount = amount - 100) : (amount = 500)}, label: {
                         Image("minus")
                             .renderingMode(.template)
                             .resizable()
@@ -47,10 +47,10 @@ struct Donate: View {
                             .frame(width: 45, height: 45)
                     })
                     .padding(.trailing)
-                    Text("500")
+                    Text("\(amount)")
                         .foregroundColor(.white)
                         .font(.system(size: 40, weight: .semibold, design: .default))
-                    Button(action: {}, label: {
+                    Button(action: {(amount < 1000000) ? (amount = amount + 100) : (amount = 1000000)}, label: {
                         Image("plus")
                             .renderingMode(.template)
                             .resizable()
@@ -80,7 +80,7 @@ struct Donate: View {
                         .font(.system(size: 20, weight: .bold))
                         .multilineTextAlignment(.trailing)
                         .foregroundColor(.white)
-                    Text("2")
+                    Text("\(Int(ceil(Double(amount/500))))")
                         .font(.system(size: 96, weight: .bold))
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)

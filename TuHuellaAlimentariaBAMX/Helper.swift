@@ -26,12 +26,12 @@ enum Page {
     case donate
 }
 
-struct Answer{
-    let answer: String
-    let points : Int
+struct AnswerType{
+    let ans: String
+    let pnt : Int
 }
 
 struct QuestionType{
-    let question : String
-    let answer : [Answer]
+    let ques : String
+    let answer : [AnswerType]
 }
