@@ -7,3 +7,6 @@ xcuserdata/
 
 # Firebase config file
 GoogleService-Info.plist
+
+# macOS
+.[Dd][Ss]_[Ss]tore
