@@ -37,7 +37,7 @@ struct Question: View {
                 Spacer()
             }
             VStack {
-                Text(questionSt.ques)
+                Text(questionSt.question)
                     .frame(width: UIScreen.main.bounds.width - 50)
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .semibold, design: .default))
@@ -51,12 +51,12 @@ struct Question: View {
                         .cornerRadius(30)
                     VStack {
                         HStack {
-                            AnswerButton(viewRouter: viewRouter,bg: answerBlueColor, ans: questionSt.answer[0])
-                            AnswerButton(viewRouter: viewRouter,bg: answerYellowColor,ans:  questionSt.answer[1])
+                            AnswerButton(viewRouter: viewRouter,bg: answerBlueColor, ans: questionSt.answers[0])
+                            AnswerButton(viewRouter: viewRouter,bg: answerYellowColor,ans:  questionSt.answers[1])
                         }
                         HStack {
-                            AnswerButton(viewRouter: viewRouter,bg: answerGreenColor, ans:  questionSt.answer[2])
-                            AnswerButton(viewRouter: viewRouter, bg: answerRedColor, ans:  questionSt.answer[3])
+                            AnswerButton(viewRouter: viewRouter,bg: answerGreenColor, ans:  questionSt.answers[2])
+                            AnswerButton(viewRouter: viewRouter, bg: answerRedColor, ans:  questionSt.answers[3])
                         }
                         .padding(.bottom, 50)
                     }
@@ -83,7 +83,7 @@ struct AnswerButton: View {
     }
     var body: some View {
         Button(action: {
-            viewRouter.points = viewRouter.points + ans.pnt;
+            viewRouter.points = viewRouter.points + ans.score;
             viewRouter.currentPage = questions[currentPageOnArray + 1]
         },label: {
             ZStack {
@@ -94,7 +94,7 @@ struct AnswerButton: View {
                         .cornerRadius(20)
                 }
                 .frame(width: 180, height: 160)
-                Text(ans.ans)
+                Text(ans.answer)
                     .foregroundColor(.white)
                     .font(.system(size: 20, weight: .semibold, design: .default))
                     .multilineTextAlignment(.center)
@@ -106,12 +106,12 @@ struct AnswerButton: View {
 struct Question_Previews: PreviewProvider {
     static var previews: some View {
         let defaultQuestion = QuestionType(
-            ques: "Pregunta Default",
-            answer: [
-                AnswerType(ans:"Respuesta1",pnt:10),
-                AnswerType(ans:"Respuesta2",pnt:20),
-                AnswerType(ans:"Respuesta3",pnt:30),
-                AnswerType(ans:"Respuesta4",pnt:40),
+            question: "Pregunta Default",
+            answers: [
+                AnswerType(answer: "Respuesta1", score: 10),
+                AnswerType(answer: "Respuesta2", score: 20),
+                AnswerType(answer: "Respuesta3", score: 30),
+                AnswerType(answer: "Respuesta4", score: 40),
             ]
         )
         Question(

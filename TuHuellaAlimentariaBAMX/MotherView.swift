@@ -15,12 +15,12 @@ struct MotherView: View {
     private let user = GIDSignIn.sharedInstance.currentUser
     
     var defaultQuestion = QuestionType(
-        ques: "Pregunta Default",
-        answer: [
-            AnswerType(ans:"Respuesta1",pnt:10),
-            AnswerType(ans:"Respuesta2",pnt:20),
-            AnswerType(ans:"Respuesta3",pnt:30),
-            AnswerType(ans:"Respuesta4",pnt:40),
+        question: "Pregunta Default",
+        answers: [
+            AnswerType(answer: "Respuesta1", score: 10),
+            AnswerType(answer: "Respuesta2", score: 20),
+            AnswerType(answer: "Respuesta3", score: 30),
+            AnswerType(answer: "Respuesta4", score: 40),
         ]
     )
     
