@@ -10,6 +10,7 @@
 		EA043F44290A1C8B0012EFC4 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043F43290A1C8B0012EFC4 /* Splash.swift */; };
 		EA043F46290A1E1B0012EFC4 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043F45290A1E1B0012EFC4 /* Login.swift */; };
 		EA043F48290A1EEA0012EFC4 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043F47290A1EEA0012EFC4 /* Welcome.swift */; };
+		EA07C332292FBFF9005F4DBF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07C331292FBFF9005F4DBF /* AuthenticationViewModel.swift */; };
 		EA5CA9B52904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */; };
 		EA5CA9B72904766000D2DD4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9B62904766000D2DD4D /* ContentView.swift */; };
 		EA5CA9B92904766100D2DD4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5CA9B82904766100D2DD4D /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		EA043F43290A1C8B0012EFC4 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		EA043F45290A1E1B0012EFC4 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		EA043F47290A1EEA0012EFC4 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		EA07C331292FBFF9005F4DBF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		EA5CA9B12904766000D2DD4D /* TuHuellaAlimentariaBAMX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuHuellaAlimentariaBAMX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuHuellaAlimentariaBAMXApp.swift; sourceTree = "<group>"; };
 		EA5CA9B62904766000D2DD4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				EA5CA9B82904766100D2DD4D /* Assets.xcassets */,
 				EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */,
 				EA5CA9BA2904766100D2DD4D /* Preview Content */,
+				EA07C331292FBFF9005F4DBF /* AuthenticationViewModel.swift */,
 			);
 			path = TuHuellaAlimentariaBAMX;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			files = (
 				EA785A5A290F45D100FD7639 /* FooterButton.swift in Sources */,
 				F1883F1A291BE1670000959D /* Question.swift in Sources */,
+				EA07C332292FBFF9005F4DBF /* AuthenticationViewModel.swift in Sources */,
 				EA5CA9B72904766000D2DD4D /* ContentView.swift in Sources */,
 				F1DAB27429251F2E002F093B /* ViewRouter.swift in Sources */,
 				EA043F48290A1EEA0012EFC4 /* Welcome.swift in Sources */,
