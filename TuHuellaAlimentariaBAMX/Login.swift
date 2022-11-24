@@ -10,6 +10,7 @@ import SwiftUI
 struct Login: View {
     
     @StateObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewModel: AuthenticationViewModel
     
     let bg: Color,
         fg: Color
@@ -39,12 +40,12 @@ struct Login: View {
                     .frame(width: 106, height: 133)
                 Spacer()
                 VStack {
-                    Button(action: {}, label: {
+                    Button(action: { viewModel.signIn() }, label: {
                         LoginButton(txt: "Iniciar sesión con Google", img: "google", fgColor: .gray, bgColor: .white)
                     })
-                    Button(action: {}, label: {
-                        LoginButton(txt: "Iniciar sesión con Apple", img: "apple", fgColor: .white, bgColor: .black)
-                    })
+                    // Button(action: {}, label: {
+                    //     LoginButton(txt: "Iniciar sesión con Apple", img: "apple", fgColor: .white, bgColor: .black)
+                    // })
                     Button(action: {
                         viewRouter.currentPage = .welcome
                     }, label: {
