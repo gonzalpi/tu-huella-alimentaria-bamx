@@ -23,6 +23,7 @@
 		EA8F0B16292EAB31009E73C6 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EA8F0B15292EAB31009E73C6 /* FirebaseDatabase */; };
 		EA8F0B18292EAB31009E73C6 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EA8F0B17292EAB31009E73C6 /* FirebaseDatabaseSwift */; };
 		EA8F0B1A292EB174009E73C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */; };
+		EA8F0B20292FBC3C009E73C6 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EA8F0B1F292FBC3C009E73C6 /* GoogleSignIn */; };
 		F1883F1A291BE1670000959D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F17291BE1670000959D /* Question.swift */; };
 		F1883F1B291BE1670000959D /* Footprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F18291BE1670000959D /* Footprint.swift */; };
 		F1883F1C291BE1670000959D /* Donate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F19291BE1670000959D /* Donate.swift */; };
@@ -79,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA8F0B18292EAB31009E73C6 /* FirebaseDatabaseSwift in Frameworks */,
+				EA8F0B20292FBC3C009E73C6 /* GoogleSignIn in Frameworks */,
 				EA8F0B16292EAB31009E73C6 /* FirebaseDatabase in Frameworks */,
 				EA8F0B14292EAB31009E73C6 /* FirebaseAuth in Frameworks */,
 			);
@@ -189,6 +191,7 @@
 				EA8F0B13292EAB31009E73C6 /* FirebaseAuth */,
 				EA8F0B15292EAB31009E73C6 /* FirebaseDatabase */,
 				EA8F0B17292EAB31009E73C6 /* FirebaseDatabaseSwift */,
+				EA8F0B1F292FBC3C009E73C6 /* GoogleSignIn */,
 			);
 			productName = TuHuellaAlimentariaBAMX;
 			productReference = EA5CA9B12904766000D2DD4D /* TuHuellaAlimentariaBAMX.app */;
@@ -264,6 +267,7 @@
 			mainGroup = EA5CA9A82904766000D2DD4D;
 			packageReferences = (
 				EA8F0B12292EAB31009E73C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EA8F0B1E292FBC3C009E73C6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = EA5CA9B22904766000D2DD4D /* Products */;
 			projectDirPath = "";
@@ -482,6 +486,7 @@
 				DEVELOPMENT_TEAM = K2PWLQ2PSB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TuHuellaAlimentariaBAMX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -511,6 +516,7 @@
 				DEVELOPMENT_TEAM = K2PWLQ2PSB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TuHuellaAlimentariaBAMX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -655,6 +661,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		EA8F0B1E292FBC3C009E73C6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -672,6 +686,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EA8F0B12292EAB31009E73C6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabaseSwift;
+		};
+		EA8F0B1F292FBC3C009E73C6 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA8F0B1E292FBC3C009E73C6 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
