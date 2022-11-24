@@ -22,7 +22,11 @@ struct Welcome: View {
     }
     init(viewRouter: ViewRouter, name: String, bg: Color, fg: Color) {
         _viewRouter =  StateObject(wrappedValue: viewRouter)
-        self.hello = "¡Hola, " + name + "!"
+        if name.count == 0 {
+            self.hello = "¡Hola!"
+        } else {
+            self.hello = "¡Hola, " + name + "!"
+        }
         self.bg = bg
         self.fg = fg
     }

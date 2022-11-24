@@ -40,25 +40,36 @@ struct Login: View {
                     .frame(width: 106, height: 133)
                 Spacer()
                 VStack {
-                    Button(action: { viewModel.signIn() }, label: {
-                        LoginButton(txt: "Iniciar sesión con Google", img: "google", fgColor: .gray, bgColor: .white)
-                    })
-                    // Button(action: {}, label: {
-                    //     LoginButton(txt: "Iniciar sesión con Apple", img: "apple", fgColor: .white, bgColor: .black)
-                    // })
-                    Button(action: {
-                        viewRouter.currentPage = .welcome
-                    }, label: {
-                        HStack {
-                            Text("seguir")
-                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
-                                .padding(.trailing, -2)
-                            Text("anónimo")
-                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
-                                .padding(.leading, -2)
-                                .font(.system(size: 20, weight: .bold))
+                    Button(
+                        action: {
+                            viewModel.signIn(viewRouter: viewRouter)
+                            // viewRouter.currentPage = .welcome
+                        },
+                        label: {
+                            LoginButton(
+                                txt: "Iniciar sesión con Google",
+                                img: "google",
+                                fgColor: .gray,
+                                bgColor: .white
+                            )
                         }
-                    })
+                    )
+                    Button(
+                        action: {
+                            viewRouter.currentPage = .welcome
+                        },
+                        label: {
+                            HStack {
+                                Text("seguir")
+                                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
+                                    .padding(.trailing, -2)
+                                Text("anónimo")
+                                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
+                                    .padding(.leading, -2)
+                                    .font(.system(size: 20, weight: .bold))
+                            }
+                        }
+                    )
                     .padding(.top, 45)
 
                 }

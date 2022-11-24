@@ -143,8 +143,8 @@
 				EA043F45290A1E1B0012EFC4 /* Login.swift */,
 				EA5CA9B82904766100D2DD4D /* Assets.xcassets */,
 				EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */,
-				EA5CA9BA2904766100D2DD4D /* Preview Content */,
 				EA07C331292FBFF9005F4DBF /* AuthenticationViewModel.swift */,
+				EA5CA9BA2904766100D2DD4D /* Preview Content */,
 			);
 			path = TuHuellaAlimentariaBAMX;
 			sourceTree = "<group>";

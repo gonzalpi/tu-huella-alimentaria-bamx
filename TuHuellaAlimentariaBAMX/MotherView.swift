@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 struct MotherView: View {
     
     @StateObject var viewRouter: ViewRouter
+    
+    private let user = GIDSignIn.sharedInstance.currentUser
     
     var defaultQuestion = QuestionType(
         ques: "Pregunta Default",
@@ -28,7 +31,7 @@ struct MotherView: View {
         case .login:
             Login(viewRouter: viewRouter, bg: creamColor, fg: redColor)
         case .welcome:
-            Welcome(viewRouter: viewRouter, name: "Alejandro", bg: creamColor, fg: redColor)
+            Welcome(viewRouter: viewRouter, name: user?.profile?.name ?? "", bg: creamColor, fg: redColor)
         case .instructions:
             Instructions(viewRouter: viewRouter,bg: creamColor, fg: redColor)
         case .question1:

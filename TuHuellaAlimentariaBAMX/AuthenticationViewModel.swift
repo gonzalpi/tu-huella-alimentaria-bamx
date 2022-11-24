@@ -15,7 +15,7 @@ class AuthenticationViewModel: ObservableObject {
         case signedOut
     }
 
-    private func authenticateUser(for user: GIDGoogleUser?, with error: Error?) {
+    private func authenticateUser(for user: GIDGoogleUser?, with error: Error?, viewRouter: ViewRouter) {
         // 1
         if let error = error {
             print(error.localizedDescription)
@@ -33,15 +33,16 @@ class AuthenticationViewModel: ObservableObject {
                 print(error.localizedDescription)
             } else {
                 self.state = .signedIn
+                viewRouter.currentPage = .welcome
             }
         }
     }
 
-    func signIn() {
+    func signIn(viewRouter: ViewRouter) {
         // 1
         if GIDSignIn.sharedInstance.hasPreviousSignIn() {
             GIDSignIn.sharedInstance.restorePreviousSignIn { [unowned self] user, error in
-                authenticateUser(for: user, with: error)
+                authenticateUser(for: user, with: error, viewRouter: viewRouter)
             }
         } else {
             // 2
@@ -56,7 +57,7 @@ class AuthenticationViewModel: ObservableObject {
 
             // 5
             GIDSignIn.sharedInstance.signIn(with: configuration, presenting: rootViewController) { [unowned self] user, error in
-                authenticateUser(for: user, with: error)
+                authenticateUser(for: user, with: error, viewRouter: viewRouter)
             }
         }
     }
