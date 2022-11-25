@@ -10,7 +10,7 @@ import SwiftUI
 struct Login: View {
     
     @StateObject var viewRouter: ViewRouter
-    @EnvironmentObject var viewModel: AuthenticationViewModel
+    @EnvironmentObject var authViewModel: AuthenticationViewModel
     
     let bg: Color,
         fg: Color
@@ -42,7 +42,7 @@ struct Login: View {
                 VStack {
                     Button(
                         action: {
-                            viewModel.signIn(viewRouter: viewRouter)
+                            authViewModel.signIn(viewRouter: viewRouter)
                             // viewRouter.currentPage = .welcome
                         },
                         label: {

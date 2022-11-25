@@ -10,7 +10,7 @@ import SwiftUI
 struct Splash: View {
     
     @StateObject var viewRouter: ViewRouter
-    @EnvironmentObject var viewModel: AuthenticationViewModel
+    @EnvironmentObject var authViewModel: AuthenticationViewModel
     
     let bg: Color
     init(viewRouter: ViewRouter, bg: Color) {
@@ -32,7 +32,7 @@ struct Splash: View {
             }
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    viewModel.signOut()
+                    authViewModel.signOut()
                     viewRouter.currentPage = .login
                 }
             }

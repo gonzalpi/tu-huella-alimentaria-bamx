@@ -21,13 +21,13 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct TuHuellaAlimentariaBAMXApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var viewRouter =  ViewRouter()
-    @StateObject var viewModel = AuthenticationViewModel()
+    @StateObject var authViewModel = AuthenticationViewModel()
     @StateObject var questionViewModel = QuestionsViewModel()
     
     var body: some Scene {
         WindowGroup {
             MotherView(viewRouter: viewRouter)
-                .environmentObject(viewModel)
+                .environmentObject(authViewModel)
                 .environmentObject(questionViewModel)
                 .onAppear {
                     questionViewModel.listentoRealtimeDatabase()
