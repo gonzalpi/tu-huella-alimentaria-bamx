@@ -11,11 +11,9 @@ struct Footprint: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     
-    let footprint: String
     let bg: Color,
         fg: Color
-    init(footprint: String, bg: Color, fg: Color) {
-        self.footprint = footprint
+    init(bg: Color, fg: Color) {
         self.bg = bg
         self.fg = fg
     }
@@ -35,7 +33,7 @@ struct Footprint: View {
                     .foregroundColor(fg)
                     .frame(width: UIScreen.main.bounds.width)
                 VStack {
-                    Text("\(viewRouter.points)")
+                    Text("\(viewRouter.points) kg")
                         .italic()
                         .foregroundColor(.white)
                         .font(.system(size: 40, weight: .bold, design: .default))
@@ -61,7 +59,6 @@ struct Footprint: View {
 struct Footprint_Previews: PreviewProvider {
     static var previews: some View {
         Footprint(
-            footprint: "8000 kg",
             bg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1)),
             fg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1))
         )

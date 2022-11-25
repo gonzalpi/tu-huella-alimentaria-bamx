@@ -54,7 +54,7 @@ struct MotherView: View {
         case .question9:
             Question(question: questionViewModel.questions.count > 9 ? questionViewModel.questions[9] : defaultQuestion, bg: creamColor, fg: redColor)
         case .footprint:
-            Footprint(footprint: "8000 kg", bg: redColor, fg: creamColor)
+            Footprint(bg: redColor, fg: creamColor)
         case .donate:
             Donate(bg: creamColor, fg: redColor)
 
