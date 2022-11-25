@@ -14,6 +14,8 @@ struct MotherView: View {
     @EnvironmentObject var questionViewModel: QuestionsViewModel
     private let user = GIDSignIn.sharedInstance.currentUser
     
+    let redColor = Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
+    let creamColor = Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1))
     var defaultQuestion = QuestionType(
         id: "0",
         question: "Presiona cualquier botón para continuar",

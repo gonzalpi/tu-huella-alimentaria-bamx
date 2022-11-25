@@ -25,7 +25,6 @@
 		EA8F0B1A292EB174009E73C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */; };
 		EA8F0B20292FBC3C009E73C6 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EA8F0B1F292FBC3C009E73C6 /* GoogleSignIn */; };
 		EAA746F7293030A3003AE115 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA746F6293030A3003AE115 /* QuestionsViewModel.swift */; };
-		EAA746F929305118003AE115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA746F829305118003AE115 /* ContentView.swift */; };
 		F1883F1A291BE1670000959D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F17291BE1670000959D /* Question.swift */; };
 		F1883F1B291BE1670000959D /* Footprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F18291BE1670000959D /* Footprint.swift */; };
 		F1883F1C291BE1670000959D /* Donate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F19291BE1670000959D /* Donate.swift */; };
@@ -69,7 +68,6 @@
 		EA785A59290F45D100FD7639 /* FooterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterButton.swift; sourceTree = "<group>"; };
 		EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EAA746F6293030A3003AE115 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
-		EAA746F829305118003AE115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1883F17291BE1670000959D /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F1883F18291BE1670000959D /* Footprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Footprint.swift; sourceTree = "<group>"; };
 		F1883F19291BE1670000959D /* Donate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donate.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				F1883F17291BE1670000959D /* Question.swift */,
 				F1883F18291BE1670000959D /* Footprint.swift */,
 				F1883F19291BE1670000959D /* Donate.swift */,
-				EAA746F829305118003AE115 /* ContentView.swift */,
 				F1DAB27129251CA9002F093B /* Helper.swift */,
 				F1DAB27329251F2E002F093B /* ViewRouter.swift */,
 				EA785A59290F45D100FD7639 /* FooterButton.swift */,
@@ -329,7 +326,6 @@
 				EA5CA9B52904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift in Sources */,
 				EA785A58290F408700FD7639 /* Instructions.swift in Sources */,
 				EAA746F7293030A3003AE115 /* QuestionsViewModel.swift in Sources */,
-				EAA746F929305118003AE115 /* ContentView.swift in Sources */,
 				F1883F1C291BE1670000959D /* Donate.swift in Sources */,
 				EA043F46290A1E1B0012EFC4 /* Login.swift in Sources */,
 				F1DAB27229251CA9002F093B /* Helper.swift in Sources */,
