@@ -9,12 +9,11 @@ import SwiftUI
 
 struct Instructions: View {
     
-    @StateObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     
     let bg: Color,
         fg: Color
-    init(viewRouter: ViewRouter, bg: Color, fg: Color) {
-        _viewRouter =  StateObject(wrappedValue: viewRouter)
+    init(bg: Color, fg: Color) {
         self.bg = bg
         self.fg = fg
     }
@@ -71,7 +70,6 @@ struct Instructions: View {
 struct Instructions_Previews: PreviewProvider {
     static var previews: some View {
         Instructions(
-            viewRouter : ViewRouter(),
             bg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1)),
             fg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
         )

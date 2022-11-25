@@ -26,7 +26,8 @@ struct TuHuellaAlimentariaBAMXApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MotherView(viewRouter: viewRouter)
+            MotherView()
+                .environmentObject(viewRouter)
                 .environmentObject(authViewModel)
                 .environmentObject(questionViewModel)
                 .onAppear {

@@ -9,13 +9,12 @@ import SwiftUI
 
 struct Footprint: View {
     
-    @StateObject var viewRouter: ViewRouter
+    @EnvironmentObject var viewRouter: ViewRouter
     
     let footprint: String
     let bg: Color,
         fg: Color
-    init(viewRouter: ViewRouter,footprint: String, bg: Color, fg: Color) {
-        _viewRouter =  StateObject(wrappedValue: viewRouter)
+    init(footprint: String, bg: Color, fg: Color) {
         self.footprint = footprint
         self.bg = bg
         self.fg = fg
@@ -62,7 +61,6 @@ struct Footprint: View {
 struct Footprint_Previews: PreviewProvider {
     static var previews: some View {
         Footprint(
-            viewRouter: ViewRouter(),
             footprint: "8000 kg",
             bg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1)),
             fg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1))
