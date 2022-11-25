@@ -15,14 +15,15 @@ let answerRedColor = Color(#colorLiteral(red: 207/256, green: 104/256, blue: 104
 struct Question: View {
     
     @StateObject var viewRouter: ViewRouter
+    @EnvironmentObject var questionViewModel: QuestionsViewModel
     
-    let questionSt: QuestionType
+    let question: QuestionType
     let bg: Color,
         fg: Color
     
-    init(viewRouter: ViewRouter, questionSt: QuestionType, bg: Color, fg: Color) {
+    init(viewRouter: ViewRouter, question: QuestionType, bg: Color, fg: Color) {
         _viewRouter =  StateObject(wrappedValue: viewRouter)
-        self.questionSt = questionSt
+        self.question = question
         self.bg = bg
         self.fg = fg
     }
@@ -37,7 +38,7 @@ struct Question: View {
                 Spacer()
             }
             VStack {
-                Text(questionSt.question)
+                Text(question.question)
                     .frame(width: UIScreen.main.bounds.width - 50)
                     .foregroundColor(.white)
                     .font(.system(size: 40, weight: .semibold, design: .default))
@@ -51,12 +52,12 @@ struct Question: View {
                         .cornerRadius(30)
                     VStack {
                         HStack {
-                            AnswerButton(viewRouter: viewRouter,bg: answerBlueColor, ans: questionSt.answers[0])
-                            AnswerButton(viewRouter: viewRouter,bg: answerYellowColor,ans:  questionSt.answers[1])
+                            AnswerButton(viewRouter: viewRouter,bg: answerBlueColor, answer: question.answers[0], score: question.scores[0])
+                            AnswerButton(viewRouter: viewRouter,bg: answerYellowColor,answer:  question.answers[1], score: question.scores[1])
                         }
                         HStack {
-                            AnswerButton(viewRouter: viewRouter,bg: answerGreenColor, ans:  questionSt.answers[2])
-                            AnswerButton(viewRouter: viewRouter, bg: answerRedColor, ans:  questionSt.answers[3])
+                            AnswerButton(viewRouter: viewRouter,bg: answerGreenColor, answer:  question.answers[2], score: question.scores[2])
+                            AnswerButton(viewRouter: viewRouter, bg: answerRedColor, answer:  question.answers[3], score: question.scores[3])
                         }
                         .padding(.bottom, 50)
                     }
@@ -70,20 +71,22 @@ struct Question: View {
 struct AnswerButton: View {
     @StateObject var viewRouter: ViewRouter
     let bg: Color
-    let ans: AnswerType
+    let answer: String
+    let score: Int
     let currentPageOnArray : Int
     
-    let questions: [Page] = [.question1,.question2,.question3,.question4,.question5,.question6,.question7,.question8,.question9,.question10,.footprint]
+    let questions: [Page] = [.question0, .question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8, .question9, .footprint]
     
-    init(viewRouter: ViewRouter, bg: Color, ans: AnswerType) {
+    init(viewRouter: ViewRouter, bg: Color, answer: String, score: Int) {
         _viewRouter =  StateObject(wrappedValue: viewRouter)
         self.bg = bg
-        self.ans = ans
+        self.answer = answer
+        self.score = score
         self.currentPageOnArray = questions.firstIndex(where: { $0 == viewRouter.currentPage })!
     }
     var body: some View {
         Button(action: {
-            viewRouter.points = viewRouter.points + ans.score;
+            viewRouter.points = viewRouter.points + score;
             viewRouter.currentPage = questions[currentPageOnArray + 1]
         },label: {
             ZStack {
@@ -94,7 +97,7 @@ struct AnswerButton: View {
                         .cornerRadius(20)
                 }
                 .frame(width: 180, height: 160)
-                Text(ans.answer)
+                Text(answer)
                     .foregroundColor(.white)
                     .font(.system(size: 20, weight: .semibold, design: .default))
                     .multilineTextAlignment(.center)
@@ -106,17 +109,14 @@ struct AnswerButton: View {
 struct Question_Previews: PreviewProvider {
     static var previews: some View {
         let defaultQuestion = QuestionType(
-            question: "Pregunta Default",
-            answers: [
-                AnswerType(answer: "Respuesta1", score: 10),
-                AnswerType(answer: "Respuesta2", score: 20),
-                AnswerType(answer: "Respuesta3", score: 30),
-                AnswerType(answer: "Respuesta4", score: 40),
-            ]
+            id: "0",
+            question: "Pregunta",
+            answers: ["10 puntos", "20 puntos", "30 puntos", "40 puntos"],
+            scores: [10, 20, 30, 40]
         )
         Question(
             viewRouter: ViewRouter(),
-            questionSt: defaultQuestion,
+            question: defaultQuestion,
             bg: Color(#colorLiteral(red: 242/256, green: 230/256, blue: 211/256, alpha: 1)),
             fg: Color(#colorLiteral(red: 219/256, green: 62/256, blue: 76/256, alpha: 1))
         )

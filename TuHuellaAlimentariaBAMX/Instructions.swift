@@ -41,7 +41,7 @@ struct Instructions: View {
                         .frame(width: UIScreen.main.bounds.width - 50)
                     Spacer(minLength: 150)
                     Button(action: {
-                        viewRouter.currentPage = .question1
+                        viewRouter.currentPage = .question0
                     }, label: {
                         ZStack {
                             Circle()

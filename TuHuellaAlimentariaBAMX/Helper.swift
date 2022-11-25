@@ -12,6 +12,7 @@ enum Page {
     case login
     case welcome
     case instructions
+    case question0
     case question1
     case question2
     case question3
@@ -21,17 +22,13 @@ enum Page {
     case question7
     case question8
     case question9
-    case question10
     case footprint
     case donate
 }
 
-struct AnswerType {
-    let answer: String
-    let score: Int
-}
-
-struct QuestionType {
+struct QuestionType: Identifiable, Codable {
+    let id: String
     let question: String
-    let answers: [AnswerType]
+    let answers: [String]
+    let scores: [Int]
 }

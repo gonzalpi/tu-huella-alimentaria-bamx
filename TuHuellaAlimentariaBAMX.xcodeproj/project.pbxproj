@@ -12,7 +12,6 @@
 		EA043F48290A1EEA0012EFC4 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA043F47290A1EEA0012EFC4 /* Welcome.swift */; };
 		EA07C332292FBFF9005F4DBF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07C331292FBFF9005F4DBF /* AuthenticationViewModel.swift */; };
 		EA5CA9B52904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */; };
-		EA5CA9B72904766000D2DD4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9B62904766000D2DD4D /* ContentView.swift */; };
 		EA5CA9B92904766100D2DD4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5CA9B82904766100D2DD4D /* Assets.xcassets */; };
 		EA5CA9BC2904766100D2DD4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5CA9BB2904766100D2DD4D /* Preview Assets.xcassets */; };
 		EA5CA9C62904766100D2DD4D /* TuHuellaAlimentariaBAMXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CA9C52904766100D2DD4D /* TuHuellaAlimentariaBAMXTests.swift */; };
@@ -25,6 +24,8 @@
 		EA8F0B18292EAB31009E73C6 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EA8F0B17292EAB31009E73C6 /* FirebaseDatabaseSwift */; };
 		EA8F0B1A292EB174009E73C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */; };
 		EA8F0B20292FBC3C009E73C6 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = EA8F0B1F292FBC3C009E73C6 /* GoogleSignIn */; };
+		EAA746F7293030A3003AE115 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA746F6293030A3003AE115 /* QuestionsViewModel.swift */; };
+		EAA746F929305118003AE115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA746F829305118003AE115 /* ContentView.swift */; };
 		F1883F1A291BE1670000959D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F17291BE1670000959D /* Question.swift */; };
 		F1883F1B291BE1670000959D /* Footprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F18291BE1670000959D /* Footprint.swift */; };
 		F1883F1C291BE1670000959D /* Donate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1883F19291BE1670000959D /* Donate.swift */; };
@@ -57,7 +58,6 @@
 		EA07C331292FBFF9005F4DBF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		EA5CA9B12904766000D2DD4D /* TuHuellaAlimentariaBAMX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuHuellaAlimentariaBAMX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuHuellaAlimentariaBAMXApp.swift; sourceTree = "<group>"; };
-		EA5CA9B62904766000D2DD4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EA5CA9B82904766100D2DD4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA5CA9BB2904766100D2DD4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EA5CA9C12904766100D2DD4D /* TuHuellaAlimentariaBAMXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuHuellaAlimentariaBAMXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +68,8 @@
 		EA785A57290F408700FD7639 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		EA785A59290F45D100FD7639 /* FooterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterButton.swift; sourceTree = "<group>"; };
 		EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAA746F6293030A3003AE115 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		EAA746F829305118003AE115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F1883F17291BE1670000959D /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F1883F18291BE1670000959D /* Footprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Footprint.swift; sourceTree = "<group>"; };
 		F1883F19291BE1670000959D /* Donate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Donate.swift; sourceTree = "<group>"; };
@@ -129,8 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				EA5CA9B42904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift */,
+				EAA746F829305118003AE115 /* ContentView.swift */,
 				F1DAB27129251CA9002F093B /* Helper.swift */,
-				EA5CA9B62904766000D2DD4D /* ContentView.swift */,
 				F1DAB26F29251C63002F093B /* MotherView.swift */,
 				F1DAB27329251F2E002F093B /* ViewRouter.swift */,
 				F1883F19291BE1670000959D /* Donate.swift */,
@@ -144,6 +146,7 @@
 				EA5CA9B82904766100D2DD4D /* Assets.xcassets */,
 				EA8F0B19292EB174009E73C6 /* GoogleService-Info.plist */,
 				EA07C331292FBFF9005F4DBF /* AuthenticationViewModel.swift */,
+				EAA746F6293030A3003AE115 /* QuestionsViewModel.swift */,
 				EA5CA9BA2904766100D2DD4D /* Preview Content */,
 			);
 			path = TuHuellaAlimentariaBAMX;
@@ -318,7 +321,6 @@
 				EA785A5A290F45D100FD7639 /* FooterButton.swift in Sources */,
 				F1883F1A291BE1670000959D /* Question.swift in Sources */,
 				EA07C332292FBFF9005F4DBF /* AuthenticationViewModel.swift in Sources */,
-				EA5CA9B72904766000D2DD4D /* ContentView.swift in Sources */,
 				F1DAB27429251F2E002F093B /* ViewRouter.swift in Sources */,
 				EA043F48290A1EEA0012EFC4 /* Welcome.swift in Sources */,
 				EA043F44290A1C8B0012EFC4 /* Splash.swift in Sources */,
@@ -326,6 +328,8 @@
 				F1DAB27029251C63002F093B /* MotherView.swift in Sources */,
 				EA5CA9B52904766000D2DD4D /* TuHuellaAlimentariaBAMXApp.swift in Sources */,
 				EA785A58290F408700FD7639 /* Instructions.swift in Sources */,
+				EAA746F7293030A3003AE115 /* QuestionsViewModel.swift in Sources */,
+				EAA746F929305118003AE115 /* ContentView.swift in Sources */,
 				F1883F1C291BE1670000959D /* Donate.swift in Sources */,
 				EA043F46290A1E1B0012EFC4 /* Login.swift in Sources */,
 				F1DAB27229251CA9002F093B /* Helper.swift in Sources */,

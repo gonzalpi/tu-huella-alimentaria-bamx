@@ -22,11 +22,16 @@ struct TuHuellaAlimentariaBAMXApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     @StateObject var viewRouter =  ViewRouter()
     @StateObject var viewModel = AuthenticationViewModel()
+    @StateObject var questionViewModel = QuestionsViewModel()
     
     var body: some Scene {
         WindowGroup {
             MotherView(viewRouter: viewRouter)
                 .environmentObject(viewModel)
+                .environmentObject(questionViewModel)
+                .onAppear {
+                    questionViewModel.listentoRealtimeDatabase()
+                }
         }
     }
 }
