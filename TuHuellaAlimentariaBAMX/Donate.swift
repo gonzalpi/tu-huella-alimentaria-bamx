@@ -8,9 +8,23 @@
 import SwiftUI
 import GoogleSignIn
 import Firebase
+import WebKit
+
+struct WebView: UIViewRepresentable {
+ 
+    var url: URL
+ 
+    func makeUIView(context: Context) -> WKWebView {
+        return WKWebView()
+    }
+ 
+    func updateUIView(_ webView: WKWebView, context: Context) {
+        let request = URLRequest(url: url)
+        webView.load(request)
+    }
+}
 
 struct Donate: View {
-    
     @EnvironmentObject var viewRouter: ViewRouter
     private let user = GIDSignIn.sharedInstance.currentUser
     @StateObject var database = DatabaseModel()
@@ -22,6 +36,7 @@ struct Donate: View {
         self.bg = bg
         self.fg = fg
     }
+    @State private var showWebView = false
     var body: some View {
         ZStack {
             VStack {
@@ -66,13 +81,14 @@ struct Donate: View {
                     .foregroundColor(.white)
                     .font(.system(size: 32, weight: .regular, design: .default))
                 Spacer()
-                Button(action: {
+                Button {
                     // Post user data to database if logged in
                     if (user?.profile?.email != nil) {
                         // Post footprint and donated amount
                         database.setUserData(email: user?.profile?.email ?? "default", name: user?.profile?.name ?? "", footprint: amount, donation: viewRouter.points*10)
                     }
-                }, label: {
+                    showWebView.toggle()
+                } label: {
                     ZStack {
                         Rectangle()
                             .fill(fg)
@@ -82,7 +98,21 @@ struct Donate: View {
                             .font(.system(size: 20, weight: .regular))
                             .foregroundColor(.white)
                     }
-                })
+                }
+                .sheet(isPresented: $showWebView) {
+                    HStack{
+                        Spacer()
+                        Button(action:{
+                            showWebView = false
+                        },label:{
+                            Text("Cancelar")
+                            .foregroundColor(Color(.systemBlue))
+                            .font(.system(size: 15, weight: .semibold))
+                            .padding()})
+                    }
+                    WebView(url: URL(string: "https://bdalimentos.org/make-a-donation/?cause_id=8492")!)
+                }
+            
                 Spacer()
                 HStack {
                     Text("Juntos\nayudaremos a\nfamilias")
