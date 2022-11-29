@@ -97,7 +97,7 @@ struct Donate: View {
                             .frame(width: 191, height: 62)
                             .cornerRadius(43)
                         Text("¡Ayudemos!")
-                            .font(.system(size: 20, weight: .regular))
+                            .font(.system(size: 20, weight: .semibold))
                             .foregroundColor(.white)
                     }
                 }
