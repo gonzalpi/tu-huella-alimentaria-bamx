@@ -6,7 +6,50 @@
 //
 
 import SwiftUI
+import PDFKit
 
+struct SheetView: View {
+    @Environment(\.dismiss) var dismiss
+    
+    var body: some View {
+        
+        HStack{
+            Spacer()
+            Button("Acepto"){
+                dismiss()
+            }
+            .foregroundColor(Color(.systemBlue))
+            .font(.system(size: 15, weight: .semibold))
+            .padding()
+        }
+        PDFKitView(url: Bundle.main.url(forResource: "PrivacyPolicy", withExtension: "pdf")!)
+    }
+}
+
+struct PDFKitView: View {
+    var url: URL
+    var body: some View {
+        PDFKitRepresentedView(url)
+    }
+}
+
+struct PDFKitRepresentedView: UIViewRepresentable {
+    let url: URL
+    init(_ url: URL) {
+        self.url = url
+    }
+
+    func makeUIView(context: UIViewRepresentableContext<PDFKitRepresentedView>) -> PDFKitRepresentedView.UIViewType {
+        let pdfView = PDFView()
+        pdfView.document = PDFDocument(url: self.url)
+        pdfView.autoScales = true
+        return pdfView
+    }
+
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<PDFKitRepresentedView>) {
+        // Update the view.
+    }
+}
 struct Login: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
@@ -18,6 +61,10 @@ struct Login: View {
         self.bg = bg
         self.fg = fg
     }
+    
+    let filePath = Bundle.main.url(forResource: "PrivacyPolicy", withExtension: "pdf")!
+    @State private var showingSheet = false
+
     var body: some View {
         ZStack {
             VStack {
@@ -78,12 +125,16 @@ struct Login: View {
                         .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
                         .font(.system(size: 15))
                         .padding(.trailing, -2)
-                    Button(action: {}, label: {
-                        Text("Términos y Condiciones")
+                    let tc = "Términos y Condiciones"
+                    Button(tc) {
+                                showingSheet.toggle()
+                            }
+                            .sheet(isPresented: $showingSheet) {
+                                SheetView()
+                            }
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
                             .font(.system(size: 15, weight: .bold))
                             .padding(.leading, -2)
-                    })
                 }
             }
         }
