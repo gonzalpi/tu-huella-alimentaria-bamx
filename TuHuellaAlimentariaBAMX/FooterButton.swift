@@ -17,7 +17,7 @@ struct FooterButton: View {
                 .cornerRadius(43)
                 .opacity(0.3)
             Text("¡Terminemos el\nhambre!\n\n")
-                .font(.system(size: 32, weight: .regular))
+                .font(.system(size: 32, weight: .semibold))
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white)
         }

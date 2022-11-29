@@ -107,10 +107,10 @@ struct Login: View {
                         label: {
                             HStack {
                                 Text("seguir")
-                                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
+                                    .foregroundColor(Color(hex: "806262"))
                                     .padding(.trailing, -2)
                                 Text("anónimo")
-                                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
+                                    .foregroundColor(Color(hex: "806262"))
                                     .padding(.leading, -2)
                                     .font(.system(size: 20, weight: .bold))
                             }
@@ -122,7 +122,7 @@ struct Login: View {
                 Spacer()
                 HStack {
                     Text("Continuando aceptas los")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
+                        .foregroundColor(Color(hex: "806262"))
                         .font(.system(size: 15))
                         .padding(.trailing, -2)
                     let tc = "Términos y Condiciones"
@@ -132,7 +132,7 @@ struct Login: View {
                             .sheet(isPresented: $showingSheet) {
                                 SheetView()
                             }
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.2)))
+                            .foregroundColor(Color(hex: "806262"))
                             .font(.system(size: 15, weight: .bold))
                             .padding(.leading, -2)
                 }
