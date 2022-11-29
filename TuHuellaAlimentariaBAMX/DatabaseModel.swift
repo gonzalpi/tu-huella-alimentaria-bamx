@@ -12,6 +12,10 @@ class DatabaseModel: ObservableObject {
     var ref: DatabaseReference! = Database.database().reference()
     func setUserData(email: String, footprint: Int, donation: Int) {
         let newEmail = email.replacingOccurrences(of: ".", with: ",")
-        self.ref.child("results").child(newEmail).setValue(["footprint": footprint, "latest_donation": donation])
+        self.ref.child("results").child(newEmail).setValue([
+            "footprint": footprint,
+            "latest_donation": donation,
+            "date": Date.now.formatted(date: .long, time: .shortened)
+        ])
     }
 }
