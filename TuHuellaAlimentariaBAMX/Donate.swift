@@ -70,7 +70,7 @@ struct Donate: View {
                     // Post user data to database if logged in
                     if (user?.profile?.email != nil) {
                         // Post footprint and donated amount
-                        database.setUserData(email: user?.profile?.email ?? "default", footprint: amount, donation: viewRouter.points*10)
+                        database.setUserData(email: user?.profile?.email ?? "default", name: user?.profile?.name ?? "", footprint: amount, donation: viewRouter.points*10)
                     }
                 }, label: {
                     ZStack {
