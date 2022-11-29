@@ -40,7 +40,7 @@ struct Question: View {
                 Text(question.question)
                     .frame(width: UIScreen.main.bounds.width - 50)
                     .foregroundColor(.white)
-                    .font(.system(size: 40, weight: .semibold, design: .default))
+                    .font(.system(size: 30, weight: .semibold, design: .default))
                     .multilineTextAlignment(.center)
                     .padding(.top, 100)
                 Spacer()
@@ -97,8 +97,9 @@ struct AnswerButton: View {
                 .frame(width: 180, height: 160)
                 Text(answer)
                     .foregroundColor(.white)
-                    .font(.system(size: 20, weight: .semibold, design: .default))
+                    .font(.system(size: 16, weight: .semibold, design: .default))
                     .multilineTextAlignment(.center)
+                    .frame(maxWidth: 150)
             }
         })
     }
