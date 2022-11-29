@@ -134,7 +134,7 @@ struct Donate: View {
                         .padding(.leading)
                 }
                 .padding(.bottom)
-                Button(action: {viewRouter.currentPage = .splash}, label: {
+                Button(action: {viewRouter.currentPage = .splash; viewRouter.points = 0}, label: {
                     Image("home")
                         .renderingMode(.template)
                         .resizable()
