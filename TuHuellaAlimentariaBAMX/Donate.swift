@@ -92,6 +92,13 @@ struct Donate: View {
                         .padding(.leading)
                 }
                 .padding(.bottom)
+                Button(action: {viewRouter.currentPage = .splash}, label: {
+                    Image("home")
+                        .renderingMode(.template)
+                        .resizable()
+                        .foregroundColor(.white)
+                        .frame(width: 30, height: 30)
+                })
             }
         }
         .background(bg)
