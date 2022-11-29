@@ -2,111 +2,111 @@
     "questions": {
         "0": {
             "id": 0,
-            "question": "Question 0",
+            "question": "Selecciona la opcion que te describe de mejor manera",
             "answers": [
-                "Answer 0.0",
-                "Answer 0.1",
-                "Answer 0.2",
-                "Answer 0.3"
+                "Compro en mercados locales, y compro solo lo que necesito para la semana",
+                "Suelo comprar en supermercados y procuro aprovechar rebajas",
+                "Compro en supermercados, procuro que tenga un certificado de organico y que este bien empaquetado",
+                "Compro en supermercados, mi principal compra es proteina de origen animal"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [10, 20, 30, 40]
         },
         "1": {
             "id": 1,
-            "question": "Question 1",
+            "question": "¿Cuál tipo de comida sueles comer más?",
             "answers": [
-                "Answer 1.0",
-                "Answer 1.1",
-                "Answer 1.2",
-                "Answer 1.3"
+                "Frutas y verduras",
+                "Pescado y camarones",
+                "Lácteos",
+                "Carne de res o cerdo"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [10, 20, 40, 40]
         },
         "2": {
             "id": 0,
-            "question": "Question 2",
+            "question": "¿Qué haces con la comida que te queda en el plato?",
             "answers": [
-                "Answer 2.0",
-                "Answer 2.1",
-                "Answer 2.2",
-                "Answer 2.3"
+                "Nunca me queda comida en mi plato",
+                "Guardo la comida en el refrigerador",
+                "Composto los restos de comida",
+                "Tiro los restos de comida a la basura"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [10, 20, 30, 40]
         },
         "3": {
             "id": 1,
-            "question": "Question 3",
+            "question": "¿Las zanahorias bebé crecen a ser zanahorias adultas?",
             "answers": [
-                "Answer 3.0",
-                "Answer 3.1",
-                "Answer 3.2",
-                "Answer 3.3"
+                "Sí",
+                "No",
+                "Sí",
+                "No"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [0, 0, 0, 0]
         },
         "4": {
             "id": 0,
-            "question": "Question 4",
+            "question": "Si veo un mercado local, ...",
             "answers": [
-                "Answer 4.0",
-                "Answer 4.1",
-                "Answer 4.2",
-                "Answer 4.3"
+                "Estaria surtiendo mi despensa semanal",
+                "Iria a ver que ofrecen",
+                "Iria, pero no hay ni uno cerca a mi",
+                "No iria, prefiero comprar en el supermercado"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [10, 20, 30, 40]
         },
         "5": {
             "id": 1,
-            "question": "Question 5",
+            "question": "Pagaría más por comida, si ...",
             "answers": [
-                "Answer 5.0",
-                "Answer 5.1",
-                "Answer 5.2",
-                "Answer 5.3"
+                "Las ganacias fueran directamente a los agricultores",
+                "Las ganacias fueran a pequeñas y medianas empresas",
+                "Fuera organica certificada",
+                "No me fijo en el precio de la comida"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [10, 20, 30, 40]
         },
         "6": {
             "id": 0,
-            "question": "Question 6",
+            "question": "Las hamburgesas vienen de vacas, el tocino de cerdos, los nuggets de pollo. ¿Alguna pregunta?",
             "answers": [
-                "Answer 6.0",
-                "Answer 6.1",
-                "Answer 6.2",
-                "Answer 6.3"
+                "Espera, ¿qué? no como carne",
+                "Solo como pescado",
+                "¿Son de libre pastoreo y organicos?",
+                "Suena como una buena comida"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [10, 20, 30, 40]
         },
         "7": {
             "id": 1,
-            "question": "Question 7",
+            "question": "¿Qué tan seguido consumes carne?",
             "answers": [
-                "Answer 7.0",
-                "Answer 7.1",
-                "Answer 7.2",
-                "Answer 7.3"
+                "Nunca",
+                "De vez en cuando",
+                "Una vez a la semana",
+                "Diario"
             ],
             "scores": [0, 10, 20, 30]
         },
         "8": {
             "id": 0,
-            "question": "Question 8",
+            "question": "¿Cuánta comida empaquetada tiras a la basura porque esta caducada?",
             "answers": [
-                "Answer 8.0",
-                "Answer 8.1",
-                "Answer 8.2",
-                "Answer 8.3"
+                "Nada",
+                "1-2 empaques",
+                "3-4 empaques",
+                "5+ emapaque"
             ],
             "scores": [0, 10, 20, 30]
         },
         "9": {
             "id": 1,
-            "question": "Question 9",
+            "question": "Compro más comida de la que necesito. ¿Te identificas con esa frase?",
             "answers": [
-                "Answer 9.0",
-                "Answer 9.1",
-                "Answer 9.2",
-                "Answer 9.3"
+                "Para nada",
+                "Algo",
+                "En ocaciones",
+                "Más de lo que me gustaría"
             ],
             "scores": [0, 10, 20, 30]
         }
