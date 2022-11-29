@@ -86,6 +86,8 @@ struct Donate: View {
                     if (user?.profile?.email != nil) {
                         // Post footprint and donated amount
                         database.setUserData(email: user?.profile?.email ?? "default", name: user?.profile?.name ?? "", footprint: amount, donation: viewRouter.points*10)
+                    } else {
+                        database.setAnonymousData(footprint: amount, donation: viewRouter.points*10)
                     }
                     showWebView.toggle()
                 } label: {

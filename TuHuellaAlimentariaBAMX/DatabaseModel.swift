@@ -19,4 +19,11 @@ class DatabaseModel: ObservableObject {
             "date": Date.now.formatted(date: .long, time: .shortened)
         ])
     }
+    func setAnonymousData(footprint: Int, donation: Int) {
+        self.ref.child("results").child(String(NSDate().timeIntervalSince1970).replacingOccurrences(of: ".", with: ",")).setValue([
+            "footprint": footprint,
+            "latest_donation": donation,
+            "date": Date.now.formatted(date: .long, time: .shortened)
+        ])
+    }
 }
