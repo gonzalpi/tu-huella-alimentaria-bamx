@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import GoogleSignIn
+import Firebase
 
 struct Donate: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
+    private let user = GIDSignIn.sharedInstance.currentUser
+    @StateObject var database = DatabaseModel()
     
     let bg: Color,
         fg: Color
@@ -62,7 +66,13 @@ struct Donate: View {
                     .foregroundColor(.white)
                     .font(.system(size: 32, weight: .regular, design: .default))
                 Spacer()
-                Button(action: {}, label: {
+                Button(action: {
+                    // Post user data to database if logged in
+                    if (user?.profile?.email != nil) {
+                        // Post footprint and donated amount
+                        database.setUserData(email: user?.profile?.email ?? "default", footprint: amount, donation: viewRouter.points*10)
+                    }
+                }, label: {
                     ZStack {
                         Rectangle()
                             .fill(fg)
