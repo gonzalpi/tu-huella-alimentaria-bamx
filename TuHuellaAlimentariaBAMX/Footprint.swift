@@ -42,6 +42,10 @@ struct Footprint: View {
                         .italic()
                         .foregroundColor(.white)
                         .font(.system(size: 40, weight: .regular, design: .default))
+                    Text("Esto es \(viewRouter.points / 6)% el promedio de consumo en Latinoamérica")
+                        .italic()
+                        .foregroundColor(.white)
+                        .font(.system(size: 10, weight: .regular, design: .default))
                 }
             }
             Spacer()
