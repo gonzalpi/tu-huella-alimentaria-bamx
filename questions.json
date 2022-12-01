@@ -6,8 +6,8 @@
             "answers": [
                 "Compro en mercados locales, y compro solo lo que necesito para la semana",
                 "Suelo comprar en supermercados y procuro aprovechar rebajas",
-                "Compro en supermercados, procuro que tenga un certificado de organico y que este bien empaquetado",
-                "Compro en supermercados, mi principal compra es proteina de origen animal"
+                "Compro en supermercados, procuro que tenga un certificado de orgánico y que este bien empaquetado",
+                "Compro en supermercados, mi principal compra es proteína de origen animal"
             ],
             "scores": [10, 20, 30, 40]
         },
@@ -26,7 +26,7 @@
             "id": 0,
             "question": "¿Qué haces con la comida que te queda en el plato?",
             "answers": [
-                "Nunca me queda comida en mi plato",
+                "Nunca queda comida en mi plato",
                 "Guardo la comida en el refrigerador",
                 "Composto los restos de comida",
                 "Tiro los restos de comida a la basura"
@@ -48,10 +48,10 @@
             "id": 0,
             "question": "Si veo un mercado local, ...",
             "answers": [
-                "Estaria surtiendo mi despensa semanal",
-                "Iria a ver que ofrecen",
-                "Iria, pero no hay ni uno cerca a mi",
-                "No iria, prefiero comprar en el supermercado"
+                "Estaría surtiendo mi despensa semanal",
+                "Iría a ver que ofrecen",
+                "Iría, pero no hay ni uno cerca a mi",
+                "No iría, prefiero comprar en el supermercado"
             ],
             "scores": [10, 20, 30, 40]
         },
@@ -61,7 +61,7 @@
             "answers": [
                 "Las ganacias fueran directamente a los agricultores",
                 "Las ganacias fueran a pequeñas y medianas empresas",
-                "Fuera organica certificada",
+                "Fuera orgánica certificada",
                 "No me fijo en el precio de la comida"
             ],
             "scores": [10, 20, 30, 40]
@@ -70,9 +70,9 @@
             "id": 0,
             "question": "Las hamburgesas vienen de vacas, el tocino de cerdos, los nuggets de pollo. ¿Alguna pregunta?",
             "answers": [
-                "Espera, ¿qué? no como carne",
+                "Espera, ¿qué? No como carne",
                 "Solo como pescado",
-                "¿Son de libre pastoreo y organicos?",
+                "¿Son de libre pastoreo y orgánicos?",
                 "Suena como una buena comida"
             ],
             "scores": [10, 20, 30, 40]
@@ -95,7 +95,7 @@
                 "Nada",
                 "1-2 empaques",
                 "3-4 empaques",
-                "5+ emapaque"
+                "5+ emapaques"
             ],
             "scores": [0, 10, 20, 30]
         },
