@@ -50,7 +50,7 @@
             "answers": [
                 "Estaría surtiendo mi despensa semanal",
                 "Iría a ver que ofrecen",
-                "Iría, pero no hay ni uno cerca a mi",
+                "Iría, pero no hay ni uno cerca a mí",
                 "No iría, prefiero comprar en el supermercado"
             ],
             "scores": [10, 20, 30, 40]
@@ -95,7 +95,7 @@
                 "Nada",
                 "1-2 empaques",
                 "3-4 empaques",
-                "5+ emapaques"
+                "5+ empaques"
             ],
             "scores": [0, 10, 20, 30]
         },
