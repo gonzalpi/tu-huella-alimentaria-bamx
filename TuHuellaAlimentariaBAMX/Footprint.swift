@@ -33,7 +33,7 @@ struct Footprint: View {
                     .foregroundColor(fg)
                     .frame(width: UIScreen.main.bounds.width)
                 VStack {
-                    Text("\(viewRouter.points*10) kg")
+                    Text("\(viewRouter.points) kg")
                         .italic()
                         .foregroundColor(.white)
                         .font(.system(size: 40, weight: .bold, design: .default))

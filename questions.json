@@ -9,7 +9,7 @@
                 "Compro en supermercados, procuro que tenga un certificado de orgánico y que este bien empaquetado",
                 "Compro en supermercados, mi principal compra es proteína de origen animal"
             ],
-            "scores": [10, 20, 30, 40]
+            "scores": [100, 200, 300, 400]
         },
         "1": {
             "id": 1,
@@ -20,7 +20,7 @@
                 "Lácteos",
                 "Carne de res o cerdo"
             ],
-            "scores": [10, 20, 40, 40]
+            "scores": [100, 200, 400, 400]
         },
         "2": {
             "id": 0,
@@ -31,7 +31,7 @@
                 "Composto los restos de comida",
                 "Tiro los restos de comida a la basura"
             ],
-            "scores": [10, 20, 30, 40]
+            "scores": [100, 200, 300, 400]
         },
         "3": {
             "id": 1,
@@ -53,7 +53,7 @@
                 "Iría, pero no hay ni uno cerca a mí",
                 "No iría, prefiero comprar en el supermercado"
             ],
-            "scores": [10, 20, 30, 40]
+            "scores": [100, 200, 300, 400]
         },
         "5": {
             "id": 1,
@@ -64,7 +64,7 @@
                 "Fuera orgánica certificada",
                 "No me fijo en el precio de la comida"
             ],
-            "scores": [10, 20, 30, 40]
+            "scores": [100, 200, 300, 400]
         },
         "6": {
             "id": 0,
@@ -75,7 +75,7 @@
                 "¿Son de libre pastoreo y orgánicos?",
                 "Suena como una buena comida"
             ],
-            "scores": [10, 20, 30, 40]
+            "scores": [100, 200, 300, 400]
         },
         "7": {
             "id": 1,
@@ -86,7 +86,7 @@
                 "Una vez a la semana",
                 "Diario"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [0, 100, 200, 300]
         },
         "8": {
             "id": 0,
@@ -97,7 +97,7 @@
                 "3-4 empaques",
                 "5+ empaques"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [0, 100, 200, 300]
         },
         "9": {
             "id": 1,
@@ -108,7 +108,7 @@
                 "En ocaciones",
                 "Más de lo que me gustaría"
             ],
-            "scores": [0, 10, 20, 30]
+            "scores": [0, 100, 200, 300]
         }
     }
 }
